@@ -38,6 +38,7 @@ $(function() {
 		//"Wikimedia Maps": "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png",
 		//"NASA GIBS": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/MODIS_Terra_CorrectedReflectance_TrueColor/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
 		"ESRI World Topo Map": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+		//"ESRI Canada Topographic": "https://tiles.arcgis.com/tiles/B6yKvIZqzuOr0jBR/arcgis/rest/services/Canada_Hillshade/MapServer/tile/{z}/{y}/{x}",
 		"Hike Bike": "https://tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png",
 
 		"div-4": "",
@@ -55,8 +56,12 @@ $(function() {
 
 		map = new mapboxgl.Map({
 			container: 'map-view',
-			style: 'mapbox://styles/aliashraf/ck6lw9nr80lvo1ipj8zovttdx',
-			center: [-73.983652, 40.755024], 
+			//style: 'mapbox://styles/aliashraf/ck6lw9nr80lvo1ipj8zovttdx',
+			//style: 'mapbox://styles/mapbox/streets-v11',
+			style: 'mapbox://styles/mapbox/outdoors-v11',
+			//style: 'mapbox://styles/mapbox/light-v10',
+			//center: [-73.983652, 40.755024],
+			center: [-79.9440107, 43.5077693],
 			zoom: 12
 		});
 
