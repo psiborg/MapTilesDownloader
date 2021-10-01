@@ -68,7 +68,10 @@ class RepoWriter(MbtilesWriter):
                     ("scheme", "tms"),
                     ("generator", "Map Tiles Downloader"),
                     ("type", "overlay"),
-                    ("attribution", "Map Tiles Downloader"),
+                    (
+                        "attribution",
+                        "<a href='https://github.com/AliFlux/MapTilesDownloader' title='Map Tiles Downloader by AliFlux'>MTD</a>",
+                    ),
                 ],
             )
 
