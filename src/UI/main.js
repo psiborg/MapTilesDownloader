@@ -62,11 +62,35 @@ $(function() {
 			//style: 'mapbox://styles/mapbox/light-v10',
 			//center: [-73.983652, 40.755024],
 			center: [-79.9440107, 43.5077693],
-			zoom: 12
+			zoom: 9
+		});
+
+		map.on('load', () => {
+			map.addSource('waymarked', {
+				"type": "raster",
+				"tiles": ["https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png"],
+				"maxzoom": 17
+			});
+	
+			map.addLayer({
+				'id': 'waymarked-hiking',
+				'type': 'raster',
+				'source': 'waymarked',
+				'minzoom': 1,
+				'maxzoom': 17
+			});
 		});
 
 		geocoder = new MapboxGeocoder({ accessToken: mapboxgl.accessToken });
 		var control = map.addControl(geocoder);
+
+		const scale = new mapboxgl.ScaleControl({
+			maxWidth: 80,
+			unit: 'imperial'
+		});
+		map.addControl(scale);
+		
+		scale.setUnit('metric');
 	}
 
 	function initializeMaterialize() {
