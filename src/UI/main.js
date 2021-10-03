@@ -34,6 +34,9 @@ $(function() {
 
 		"div-3": "",
 
+		"Carto Dark": "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+		"Carto Light": "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+		"Carto Voyager": "https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
 		//"ESRI World Imagery": "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
 		//"Wikimedia Maps": "https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png",
 		//"NASA GIBS": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/MODIS_Terra_CorrectedReflectance_TrueColor/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
@@ -45,9 +48,9 @@ $(function() {
 
 		//"Carto Light": "http://cartodb-basemaps-c.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
 		//"Stamen Toner B&W": "http://a.tile.stamen.com/toner/{z}/{x}/{y}.png",
+		"OpenSnowMap Pistes": "https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png",
 		"Stamen Toner Hybrid": "https://stamen-tiles-a.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}.png",
-		"Waymarked Trails Hiking": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png",
-		"OpenSnowMap Pistes": "https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png"
+		"Waymarked Trails Hiking": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png"
 	};
 
 	function initializeMap() {
