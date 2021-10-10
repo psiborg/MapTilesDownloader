@@ -50,7 +50,8 @@ $(function() {
 		//"Stamen Toner B&W": "http://a.tile.stamen.com/toner/{z}/{x}/{y}.png",
 		"OpenSnowMap Pistes": "https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png",
 		"Stamen Toner Hybrid": "https://stamen-tiles-a.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}.png",
-		"Waymarked Trails Hiking": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png"
+		"Waymarked Trails Hiking": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png",
+		"Waymarked Trails Slopes": "https://tile.waymarkedtrails.org/slopes/{z}/{x}/{y}.png"
 	};
 
 	function initializeMap() {
